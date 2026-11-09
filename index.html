@@ -12,6 +12,13 @@ a{color:var(--brand);text-decoration:none}
 .wrap{max-width:1180px;margin:0 auto;padding:0 22px 60px}
 header{background:linear-gradient(120deg,#0b1f3a,#173b78 55%,#2f6fed);color:#fff;padding:34px 0 30px}
 header .wrap{padding-bottom:0}
+.series{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:-6px 0 20px;font-size:12.5px}
+.series a{color:#dbe8ff;border-bottom:1px solid rgba(219,232,255,.45);padding-bottom:1px}
+.series a:hover{color:#fff;border-bottom-color:#fff}
+.series a.series__primary{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.38);border-radius:999px;padding:5px 13px;color:#fff;font-weight:700;border-bottom:1px solid rgba(255,255,255,.38)}
+.series a.series__primary:hover{background:rgba(255,255,255,.24)}
+.series__label{opacity:.72}
+.series__sep{width:1px;height:14px;background:rgba(255,255,255,.3)}
 .brand{display:flex;align-items:center;gap:9px;font-size:13px;letter-spacing:2px;opacity:.9}
 h1{font-size:27px;margin:14px 0 6px;font-weight:700;letter-spacing:.5px}
 .sub{font-size:14px;opacity:.86;margin:0}
@@ -61,6 +68,16 @@ footer b{color:var(--accent);letter-spacing:1px}
 </head>
 <body>
 <header><div class="wrap">
+  <nav class="series" aria-label="站点互链导航">
+    <a class="series__primary" href="https://soycodetrail.top/aiedu-subject-map" target="_blank" rel="noopener noreferrer">返回主站：全学科交互课件总表</a>
+    <a href="https://soycodetrail.top" target="_blank" rel="noopener noreferrer">soycodetrail.top 全站</a>
+    <span class="series__sep"></span>
+    <span class="series__label">系列资源站</span>
+    <a href="https://soycodetrail.top/vibe-coding" target="_blank" rel="noopener noreferrer">Vibe Coding 作品展</a>
+    <a href="https://soycodetrail.top/dsh-plugins" target="_blank" rel="noopener noreferrer">DeepSeek Harness 插件库</a>
+    <a href="https://soycodetrail.top/skills" target="_blank" rel="noopener noreferrer">AI 技能工坊</a>
+    <a href="https://soycodetrail.top/books" target="_blank" rel="noopener noreferrer">开源书籍宝库</a>
+  </nav>
   <div class="brand">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
     AIEDU · 豆码涌现
@@ -81,8 +98,8 @@ footer b{color:var(--accent);letter-spacing:1px}
   <div class="changelog"><h2>更新日志</h2><div class="cl-item"><div class="cl-date">2026-11-09 · 新增 1 / 移除 0</div><ul><li>新增 历史 / 甲骨文 · OracleLab / 甲骨文 · OracleLab</li></ul></div></div>
   <footer>
     <div class="sig">豆奶与程序猫 · 持续更新</div>
-    <div>在线地址：<a href="https://soycodetrail.github.io/aiedu-subject-map/" target="_blank" rel="noopener">https://soycodetrail.github.io/aiedu-subject-map/</a> ｜ 数据每日自动同步飞书云文档与 PDF</div>
-    <div style="margin-top:6px">全部链接均经真实浏览器渲染验证；铜匠实验室课程为开源镜像（CC BY-NC 4.0 署名非商业）</div>
+    <div>在线地址：<a href="https://soycodetrail.github.io/aiedu-subject-map/" target="_blank" rel="noopener">https://soycodetrail.github.io/aiedu-subject-map/</a> ｜ 主站模块：<a href="https://soycodetrail.top/aiedu-subject-map" target="_blank" rel="noopener">https://soycodetrail.top/aiedu-subject-map</a> ｜ 数据每日自动同步飞书云文档与 PDF</div>
+    <div style="margin-top:6px">展示站仓库：<a href="https://github.com/soycodetrail/aiedu-subject-map" target="_blank" rel="noopener">GitHub</a> ｜ 全部链接均经真实浏览器渲染验证；铜匠实验室课程为开源镜像（CC BY-NC 4.0 署名非商业）</div>
   </footer>
 </div>
 <script>
